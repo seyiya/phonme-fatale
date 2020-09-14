@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>phonme</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+	<!-- Main Servlet : Domain -> ip/phonme/fatale/* -->
+	<servlet>
+		<servlet-name>phonmeServlet</servlet-name>
+		<servlet-class>com.phonme.PhonmeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>phonmeServlet</servlet-name>
+		<url-pattern>/fatale/*</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- DBCPConn -->
+	<resource-ref>
+		<description>Oracle Database Source</description>
+		<res-ref-name>jdbc/myOracle</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	
+
+<!-- 필터 -->	
+	<!-- Timer Filter -->
+	<filter>
+		<filter-name>timerFilter</filter-name>
+		<filter-class>com.filter.TimerFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>timerFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- CharsetEncodingFilter -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>com.filter.CharsetEncodingFilter</filter-class>
+			<init-param>
+				<param-name>charset</param-name>
+				<param-value>utf-8</param-value>
+			</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- Login Filter -->
+	<filter>
+		<filter-name>loginFilter</filter-name>
+		<filter-class>com.filter.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+		<url-pattern>/fatale/myPage.do</url-pattern>
+		<url-pattern>/fatale/update.do</url-pattern>
+		<url-pattern>/fatale/cart.do</url-pattern>
+		<url-pattern>/fatale/myPage.do</url-pattern>
+		<url-pattern>/fatale/update.do</url-pattern>
+		<url-pattern>/fatale/cart.do</url-pattern>
+		<url-pattern>/fatale/reviewWrite.do</url-pattern>
+		<url-pattern>/fatale/reviewWrite_ok.do</url-pattern>
+		<url-pattern>/fatale/jjim_ok.do</url-pattern>
+		<url-pattern>/fatale/cart_delete.do</url-pattern>
+		<url-pattern>/fatale/cart_count_update.do</url-pattern>
+		<url-pattern>/fatale/order.do</url-pattern>
+		<url-pattern>/fatale/order_ok.do</url-pattern>
+		<url-pattern>/fatale/qnaWrite.do</url-pattern>
+		<url-pattern>/fatale/article_ok.do</url-pattern>
+	</filter-mapping>
+	
+
+	 
+</web-app>

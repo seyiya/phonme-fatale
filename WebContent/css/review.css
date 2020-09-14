@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #FFF;
+}
+
+h2{
+	font-family: 'Do Hyeon', sans-serif;  /*폰트 : 도현체*/
+}
+
+div#wrapper {
+	min-width: 70%;
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+div#wrapper_write {
+    width: 30%;
+    min-width: 30%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    font-family: 'Do Hyeon';
+}
+
+.bokyung_write_text{
+	padding : 1px 10px 0px 10px;
+	margin: 10px 10px 10px 10px;
+	width: 400px;
+	height: 35px;
+	background-color: #DFDFEB; 
+	font-family: 'Do Hyeon', sans-serif; 
+	border:0;
+	font-size: 14pt;
+	color: #666;
+	vertical-align: middle;
+	border-color: white;"
+}
+
+.bokyung_write_textarea{
+	padding : 10px 10px 10px 10px;
+	margin: 10px;
+	width: 400px;
+	height: 200px;
+	background-color: #DFDFEB; 
+	font-family: 'Do Hyeon', sans-serif; 
+	border:0;
+	font-size: 14pt;
+	color: #666;
+	vertical-align: middle;
+	border-color: white;"
+}
+
+p.date {						/*날짜 */
+    font-size: 12pt;
+    float: right;
+}
+
+p.content{							
+}
+
+div#paging {
+    width: 200px;
+    margin: 10px auto;
+	text-align: center;
+}
+
+.bokyung_button_qna {
+	padding: 5px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 13pt;
+	background-color: #0F168C;
+	color: white;
+	border: 0;
+	border-radius: 30px;
+	vertical-align: middle;
+	width: 100px;
+	cursor:pointer;
+}
+
+.bokyung_button1 {
+	padding: 10px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 14pt;
+	background-color: #0F168C;
+	color: white;
+	border: 0;
+	border-radius: 30px;
+	vertical-align: middle;
+	width: 130px;
+	cursor:pointer;
+}
+

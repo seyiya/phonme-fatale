@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #FFF;
+	font-family: 'Do Hyeon', sans-serif;
+	min-height: 100%; height: auto
+}
+
+
+div#wrapper_cart {
+	justify-content : center; /*가운데정렬*/
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    font-family: 'Do Hyeon';
+}
+.bokyung_button_cart1 {
+	float: right;
+	margin : 10px 5px 10px 5px ;
+	padding: 5px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 13pt;
+	background-color: #7a7ebf;
+	color: white;
+	border: 0;
+	border-radius: 30px;
+	vertical-align: middle;
+	width: 100px;
+	cursor:pointer;
+}
+
+.bokyung_button_cart2 {
+	float: right;
+	margin : 10px 5px 10px 5px ;
+	padding: 10px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 15pt;
+	background-color: #0F168C;
+	color: white;
+	border: 0;
+	border-radius: 30px;
+	vertical-align: middle;
+	width: 120px;
+	cursor:pointer;
+}
+
+.bokyung_button_cart_change {
+	float: left;
+	margin : 10px 10px 10px 10px ;
+	padding: 5px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 13pt;
+	background-color: #7a7ebf;
+	color: white;
+	border: 0;
+	border-radius: 30px;
+	vertical-align: middle;
+	width: 50px;
+	cursor:pointer;
+}
+
+td.bokyung_order_table_left{
+	width : 125px;
+	padding-left: 30px;
+	height: 60px;
+    padding-left: 15px;
+    color : #0F168C;
+    font-size: 15pt;
+  }
+
+
+ 
+  .bokyung_order_text{
+  background-color: #DFDFEB;
+  padding-top : 2px;
+  padding-left: 15px;
+  border:  0;
+  width: 250px;
+  height: 35px;
+  font-size: 15pt;
+  font-family: 'Do Hyeon';
+  
+  
+  }
+
+  .bokyung_button_join{
+  padding: 10px 10px 10px 10px; 
+  font-family: 'Do Hyeon', sans-serif; 
+  font-size: 14pt;
+  background-color: #0F168C; 
+  color : white; 
+  border: 0; 
+  border-radius: 30px;
+  vertical-align: middle;
+  width: 150px!important;
+  height: 55px!important;
+  cursor:pointer;
+  }
+  
+  .container{
+  text-align: center;
+  justify-content: center;
+  min-height: 100%; height: auto;
+  }
+  
+  .bokyung_button1{
+  padding: 10px; 
+  font-family: 'Do Hyeon', sans-serif; 
+  font-size: 14pt;
+  background-color: #0F168C; 
+  color : white; 
+  border: 0; 
+  border-radius: 30px;
+  vertical-align: middle;
+  width: 130px;
+  cursor:pointer;
+  }
+  
+  
+  .btn_position{
+  padding-left: 20px;
+  }
+  
+  /*QNA링크*/
+a.bokyung_mypage_link_Q:link
+	{color:#D96277;}
+
+a.bokyung_mypage_link_Q:visited
+	{color:#D96277;}
+
+a.bokyung_mypage_link_Q:hover
+	{color:red; text-decoration:none;}
+  
+  
+  
+  
+  

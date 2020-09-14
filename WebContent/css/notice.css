@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #FFF;
+}
+
+h2{
+	font-family: 'Do Hyeon', sans-serif;  /*폰트 : 도현체*/
+}
+
+div#wrapper {
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.accordion {							/* 아코디언 칸 */
+  background-color: #FFF;
+  cursor: pointer;
+  padding: 20px 20px 18px 20px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 12pt;
+  transition: 0.4s;
+  box-shadow: 3px 3px 5px 3px #D5d5d5;
+  font-family: 'Do Hyeon', sans-serif;
+  color : #777;
+}
+
+.active, .accordion:hover {			/*마우스 올렸을때*/
+  background-color: #7a7ebf;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 15pt;
+  color : white;
+  padding: 25px 25px 23px 25px;
+  
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {							/*클릭 후 상세내용*/
+  padding: 0 18px;
+  background-color: #DFDFEB;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 12pt;
+  color : #666;
+}
+
+.panel p {
+	padding: 1em;
+}
+
+p.date {						/*날짜 */
+    font-size: 12pt;
+    float: right;
+}
+
+p.content{							
+}
+
+div#paging {
+    width: 200px;
+    margin: 10px auto;
+    text-align: center;
+}
